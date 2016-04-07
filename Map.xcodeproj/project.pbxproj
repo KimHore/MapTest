@@ -14,6 +14,10 @@
 		493924921CB6D50D005EFDC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493924901CB6D50D005EFDC2 /* LaunchScreen.storyboard */; };
 		4939249D1CB6D50D005EFDC2 /* MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4939249C1CB6D50D005EFDC2 /* MapTests.swift */; };
 		493924A81CB6D50D005EFDC2 /* MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493924A71CB6D50D005EFDC2 /* MapUITests.swift */; };
+		493924B61CB6D5CF005EFDC2 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493924B51CB6D5CF005EFDC2 /* JSON.swift */; };
+		493924B81CB6D609005EFDC2 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493924B71CB6D609005EFDC2 /* VCMapView.swift */; };
+		493924BB1CB6D668005EFDC2 /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = 493924BA1CB6D668005EFDC2 /* PublicArt.json */; };
+		493924BD1CB6D72A005EFDC2 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493924BC1CB6D72A005EFDC2 /* Artwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		493924A31CB6D50D005EFDC2 /* MapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		493924A71CB6D50D005EFDC2 /* MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUITests.swift; sourceTree = "<group>"; };
 		493924A91CB6D50D005EFDC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493924B51CB6D5CF005EFDC2 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = SOURCE_ROOT; };
+		493924B71CB6D609005EFDC2 /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
+		493924BA1CB6D668005EFDC2 /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = SOURCE_ROOT; };
+		493924BC1CB6D72A005EFDC2 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,16 @@
 		493924861CB6D50D005EFDC2 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				493924B91CB6D620005EFDC2 /* Supporting Files */,
+				493924B51CB6D5CF005EFDC2 /* JSON.swift */,
 				493924871CB6D50D005EFDC2 /* AppDelegate.swift */,
 				493924891CB6D50D005EFDC2 /* ViewController.swift */,
 				4939248B1CB6D50D005EFDC2 /* Main.storyboard */,
 				4939248E1CB6D50D005EFDC2 /* Assets.xcassets */,
 				493924901CB6D50D005EFDC2 /* LaunchScreen.storyboard */,
 				493924931CB6D50D005EFDC2 /* Info.plist */,
+				493924B71CB6D609005EFDC2 /* VCMapView.swift */,
+				493924BC1CB6D72A005EFDC2 /* Artwork.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -123,6 +135,14 @@
 				493924A91CB6D50D005EFDC2 /* Info.plist */,
 			);
 			path = MapUITests;
+			sourceTree = "<group>";
+		};
+		493924B91CB6D620005EFDC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				493924BA1CB6D668005EFDC2 /* PublicArt.json */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493924BB1CB6D668005EFDC2 /* PublicArt.json in Resources */,
 				493924921CB6D50D005EFDC2 /* LaunchScreen.storyboard in Resources */,
 				4939248F1CB6D50D005EFDC2 /* Assets.xcassets in Resources */,
 				4939248D1CB6D50D005EFDC2 /* Main.storyboard in Resources */,
@@ -256,6 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493924BD1CB6D72A005EFDC2 /* Artwork.swift in Sources */,
+				493924B81CB6D609005EFDC2 /* VCMapView.swift in Sources */,
+				493924B61CB6D5CF005EFDC2 /* JSON.swift in Sources */,
 				4939248A1CB6D50D005EFDC2 /* ViewController.swift in Sources */,
 				493924881CB6D50D005EFDC2 /* AppDelegate.swift in Sources */,
 			);
